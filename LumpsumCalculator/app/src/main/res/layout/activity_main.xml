@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="361dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="353dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:text="Amount you are investing in one go"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="356dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview1"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="234dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="Lumpsum Investment"
+        app:layout_constraintEnd_toEndOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="@+id/edit1"
+        app:layout_constraintTop_toTopOf="@+id/edit1" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="175dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edit4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="144dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:hint="Return Expected"
+        app:layout_constraintEnd_toEndOf="@+id/edit2"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/edit2"
+        app:layout_constraintTop_toTopOf="@+id/edit2" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="167dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toEndOf="@+id/edit2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="135dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        android:hint="Expense Ratio(%)"
+        app:layout_constraintEnd_toEndOf="@+id/edit3"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="@+id/edit3"
+        app:layout_constraintTop_toTopOf="@+id/edit3" />
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="174dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="119dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:hint="Investment Percentage"
+        app:layout_constraintEnd_toEndOf="@+id/edit4"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="@+id/edit4"
+        app:layout_constraintTop_toTopOf="@+id/edit4" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="77dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:text="Year"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="84dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="44dp"
+        android:text="Monthly"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="371dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="CALCULATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
