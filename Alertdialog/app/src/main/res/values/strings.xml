@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Alert dialog</string>
+    <string name="button">OK</string>
+</resources>
