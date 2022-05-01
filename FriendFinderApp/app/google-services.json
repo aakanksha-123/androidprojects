@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "885672298594",
+    "firebase_url": "https://friendfinder-53237-default-rtdb.firebaseio.com",
+    "project_id": "friendfinder-53237",
+    "storage_bucket": "friendfinder-53237.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885672298594:android:8a85d1d8f096548382693b",
+        "android_client_info": {
+          "package_name": "com.example.friendfinderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885672298594-nukd88b6lg1a8ka4utaafr103tst0mvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWT8Ndbx4Za-zZO8q1Eht9K8FxuXiKgyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885672298594-nukd88b6lg1a8ka4utaafr103tst0mvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
