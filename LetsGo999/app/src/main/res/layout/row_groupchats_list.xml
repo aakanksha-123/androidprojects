@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="1dp"
+    app:cardBackgroundColor="@color/soft"
+    app:contentPadding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/groupIconIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_group_primary"/>
+
+        <TextView
+            android:id="@+id/groupTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Group Name"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_toEndOf="@+id/groupIconIv"/>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupTitleTv"
+            android:layout_toEndOf="@+id/groupIconIv"
+            android:text="Sender Name : "
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupTitleTv"
+            android:layout_toEndOf="@+id/nameTv"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:text="Group Message"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTv"
+            android:layout_alignParentEnd="true"
+            android:text="12:12 PM"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
